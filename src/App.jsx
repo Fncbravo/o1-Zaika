@@ -44,8 +44,11 @@ const RestaurantCard = () => {
       <img 
         className='res-logo'
         alt="res-logo"
-        src="https://b.zmtcdn.com/data/pictures/7/19285497/9c530580290ed4b23f583ad3f218dc86.jpg?output-format=webp&fit=around|771.75:416.25&crop=771.75:416.25;*,*" alt="Restaurant" />
+        src="https://b.zmtcdn.com/data/pictures/chains/1/50691/ecfdc75d21bd7cd9d880f05c8382bc65.jpg?fit=around%7C200%3A200&crop=200%3A200%3B%2A%2C%2A" alt="Restaurant" />
      <h3>Meghna's Kitchen</h3>
+     <h4>Biryani,North Indian,Chinese</h4>
+     <h4>4.5 stars</h4>
+     <h4>38 minutes</h4>
     </div> 
 
   )
@@ -58,6 +61,14 @@ const Body = () => {
         <input type="text" placeholder="Search" />
       </div>
       <div className="res-container">
+        <RestaurantCard />
+        <RestaurantCard />
+        <RestaurantCard />
+        <RestaurantCard />
+        <RestaurantCard />
+        <RestaurantCard />
+        <RestaurantCard />
+        <RestaurantCard />
         <RestaurantCard />
       </div>
     </div>
