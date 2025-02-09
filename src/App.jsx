@@ -38,12 +38,38 @@ const Header = () => {
   )
 };
 
+const RestaurantCard = () => {
+  return (
+    <div className="res-card">
+      <img 
+        className='res-logo'
+        alt="res-logo"
+        src="https://b.zmtcdn.com/data/pictures/7/19285497/9c530580290ed4b23f583ad3f218dc86.jpg?output-format=webp&fit=around|771.75:416.25&crop=771.75:416.25;*,*" alt="Restaurant" />
+     <h3>Meghna's Kitchen</h3>
+    </div> 
+
+  )
+}
+
+const Body = () => {
+  return (
+    <div className="body">
+      <div className="search">
+        <input type="text" placeholder="Search" />
+      </div>
+      <div className="res-container">
+        <RestaurantCard />
+      </div>
+    </div>
+  )
+}
+
 function App() {
 
   return (
     <>
       <Header />
-
+      <Body />
     </>
   )
 };
