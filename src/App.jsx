@@ -38,15 +38,15 @@ const Header = () => {
   )
 };
 
-const RestaurantCard = () => {
+const RestaurantCard = (props) => {
   return (
     <div className="res-card">
       <img 
         className='res-logo'
         alt="res-logo"
         src="https://b.zmtcdn.com/data/pictures/chains/1/50691/ecfdc75d21bd7cd9d880f05c8382bc65.jpg?fit=around%7C200%3A200&crop=200%3A200%3B%2A%2C%2A" alt="Restaurant" />
-     <h3>Meghna's Kitchen</h3>
-     <h4>Biryani,North Indian,Chinese</h4>
+     <h3>{props.resName}</h3>
+     <h4>{props.cuisine}</h4>
      <h4>4.5 stars</h4>
      <h4>38 minutes</h4>
     </div> 
@@ -61,8 +61,8 @@ const Body = () => {
         <input type="text" placeholder="Search" />
       </div>
       <div className="res-container">
-        <RestaurantCard />
-        <RestaurantCard />
+        <RestaurantCard resName= "Meghna Foods" cuisine="Biryani, North Indian, Asian"/>
+        <RestaurantCard resName= "KFS" cuisine="Chicken Burger"/>
         <RestaurantCard />
         <RestaurantCard />
         <RestaurantCard />
