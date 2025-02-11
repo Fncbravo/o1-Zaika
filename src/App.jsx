@@ -52,6 +52,16 @@ const RestaurantCard = (props) => {
     </div> 
 
   )
+};
+
+const resObj = {
+  type: "restaurant",
+  data: {
+    type: "F",
+    name: "KFC",
+    cuisines: "Burger,Fries",
+    avgRating: 3.8
+  }
 }
 
 const Body = () => {
@@ -61,15 +71,12 @@ const Body = () => {
         <input type="text" placeholder="Search" />
       </div>
       <div className="res-container">
-        <RestaurantCard resName= "Meghna Foods" cuisine="Biryani, North Indian, Asian"/>
+        <RestaurantCard 
+        resName= "Meghna Foods" 
+        cuisine="Biryani, North Indian, Asian"
+        
+        />
         <RestaurantCard resName= "KFS" cuisine="Chicken Burger"/>
-        <RestaurantCard />
-        <RestaurantCard />
-        <RestaurantCard />
-        <RestaurantCard />
-        <RestaurantCard />
-        <RestaurantCard />
-        <RestaurantCard />
       </div>
     </div>
   )
