@@ -64,7 +64,9 @@ const resObj = {
   }
 }
 
-const Body = () => {
+const resData = resObj;
+
+const Body = (resData) => {
   return (
     <div className="body">
       <div className="search">
@@ -72,10 +74,14 @@ const Body = () => {
       </div>
       <div className="res-container">
         <RestaurantCard 
-        resName= "Meghna Foods" 
-        cuisine="Biryani, North Indian, Asian"
+        resName= {resData.data.name}
+        cuisine= {resData.data.cuisines}
+        Rating = {resData.data.avgRating}
         
         />
+        <RestaurantCard resName= "KFS" cuisine="Chicken Burger"/>
+        <RestaurantCard resName= "KFS" cuisine="Chicken Burger"/>
+        <RestaurantCard resName= "KFS" cuisine="Chicken Burger"/>
         <RestaurantCard resName= "KFS" cuisine="Chicken Burger"/>
       </div>
     </div>
