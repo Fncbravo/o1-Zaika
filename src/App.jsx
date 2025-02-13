@@ -81,8 +81,7 @@ const Body = (resData) => {
         />
         <RestaurantCard resName= "KFS" cuisine="Chicken Burger"/>
         <RestaurantCard resName= "KFS" cuisine="Chicken Burger"/>
-        <RestaurantCard resName= "KFS" cuisine="Chicken Burger"/>
-        <RestaurantCard resName= "KFS" cuisine="Chicken Burger"/>
+    
       </div>
     </div>
   )
