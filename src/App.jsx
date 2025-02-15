@@ -79,8 +79,9 @@ const Body = (resData) => {
         Rating = {resData.data.avgRating}
         
         />
-        <RestaurantCard resName= "KFS" cuisine="Chicken Burger"/>
-        <RestaurantCard resName= "KFS" cuisine="Chicken Burger"/>
+        <RestaurantCard resName= "KFC" cuisine="Chicken Burger"/>
+        <RestaurantCard resName= "Dominos" cuisine="Margherita, paneer"/>
+        <RestaurantCard resName= "PizzaHut" cuisine="Fries, latte"/>
     
       </div>
     </div>
