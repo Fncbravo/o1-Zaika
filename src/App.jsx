@@ -87,6 +87,22 @@ const Body = () => {
         <RestaurantCard resName= "KFC" cuisine="Burger, Fries" rating={4.2} time={25}/>
         <RestaurantCard resName= "Domino's" cuisine="Pizza,Pasta" rating={4.1} time={35}/>
         <RestaurantCard resName= "PizzaHut" cuisine="Pizza, Wings" rating={4.0} time={40}/>
+        <RestaurantCard resName= "PizzaHut" cuisine="Pizza, Wings" rating={4.0} time={40}/>
+        <RestaurantCard resName= "PizzaHut" cuisine="Pizza, Wings" rating={4.0} time={40}/>
+        <RestaurantCard resName= "PizzaHut" cuisine="Pizza, Wings" rating={4.0} time={40}/>
+        <RestaurantCard resName= "PizzaHut" cuisine="Pizza, Wings" rating={4.0} time={40}/>
+        <RestaurantCard resName= "PizzaHut" cuisine="Pizza, Wings" rating={4.0} time={40}/>
+        <RestaurantCard resName= "PizzaHut" cuisine="Pizza, Wings" rating={4.0} time={40}/>
+        <RestaurantCard resName= "PizzaHut" cuisine="Pizza, Wings" rating={4.0} time={40}/>
+        <RestaurantCard resName= "PizzaHut" cuisine="Pizza, Wings" rating={4.0} time={40}/>
+        <RestaurantCard resName= "PizzaHut" cuisine="Pizza, Wings" rating={4.0} time={40}/>
+        <RestaurantCard resName= "PizzaHut" cuisine="Pizza, Wings" rating={4.0} time={40}/>
+        <RestaurantCard resName= "PizzaHut" cuisine="Pizza, Wings" rating={4.0} time={40}/>
+        <RestaurantCard resName= "PizzaHut" cuisine="Pizza, Wings" rating={4.0} time={40}/>
+        <RestaurantCard resName= "PizzaHut" cuisine="Pizza, Wings" rating={4.0} time={40}/>
+        <RestaurantCard resName= "PizzaHut" cuisine="Pizza, Wings" rating={4.0} time={40}/>
+        <RestaurantCard resName= "PizzaHut" cuisine="Pizza, Wings" rating={4.0} time={40}/>
+        <RestaurantCard resName= "PizzaHut" cuisine="Pizza, Wings" rating={4.0} time={40}/>
     
       </div>
     </div>
