@@ -4,9 +4,16 @@
   justify-content: space-between;
   margin: 10px;
   border: 1px solid black;
+  background-color: azure;
 }
 
+.search {
+  border-radius: 1px black ;
+}
 
+.body {
+  background-color: burlywood;
+}
 .logo {
   width: 150px;
   height: 100px;
@@ -40,6 +47,7 @@
   padding: 5px;
   margin: 5px;
   border-radius: 10px;
+  background-color: cornsilk;
 }
 
 .res-card:hover {
