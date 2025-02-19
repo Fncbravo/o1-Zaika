@@ -1,23 +1,5 @@
 import './index.css';
 
-/**
- * Header
- *  - Logo
- *  - Nav Items
- * Body
- *  - Search
- *  - RestaurantContainer
- *    - Restaurant Card
- *      - Image
- *      - Name
- *      - Rating
- *      - Cusines
- * Footer
- *  - Copyright
- *  - Links
- *  - Address
- *  - Contact
- */
 
 const Header = () => {
   return (
