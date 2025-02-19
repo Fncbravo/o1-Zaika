@@ -48,7 +48,9 @@ const RestaurantCard = (props) => {
       <img 
         className='res-logo'
         alt="res-logo"
-        src="https://b.zmtcdn.com/data/pictures/chains/1/50691/ecfdc75d21bd7cd9d880f05c8382bc65.jpg?fit=around%7C200%3A200&crop=200%3A200%3B%2A%2C%2A"  
+        src={"https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_660/" + 
+          resData.info.cloudinaryImageId
+        }  
         />
      <h3>{resData.info.name}</h3>
      <h4>{resData.info.cuisines}</h4>
@@ -1972,27 +1974,34 @@ const Body = () => {
         <RestaurantCard 
          resData = {resList[0]}
         />
-{/*         
-        <RestaurantCard resName= "KFC" cuisine="Burger, Fries" rating={4.2} time={25}/>
-        <RestaurantCard resName= "Domino's" cuisine="Pizza,Pasta" rating={4.1} time={35}/>
-        <RestaurantCard resName= "PizzaHut" cuisine="Pizza, Wings" rating={4.0} time={40}/>
-        <RestaurantCard resName= "PizzaHut" cuisine="Pizza, Wings" rating={4.0} time={40}/>
-        <RestaurantCard resName= "PizzaHut" cuisine="Pizza, Wings" rating={4.0} time={40}/>
-        <RestaurantCard resName= "PizzaHut" cuisine="Pizza, Wings" rating={4.0} time={40}/>
-        <RestaurantCard resName= "PizzaHut" cuisine="Pizza, Wings" rating={4.0} time={40}/>
-        <RestaurantCard resName= "PizzaHut" cuisine="Pizza, Wings" rating={4.0} time={40}/>
-        <RestaurantCard resName= "PizzaHut" cuisine="Pizza, Wings" rating={4.0} time={40}/>
-        <RestaurantCard resName= "PizzaHut" cuisine="Pizza, Wings" rating={4.0} time={40}/>
-        <RestaurantCard resName= "PizzaHut" cuisine="Pizza, Wings" rating={4.0} time={40}/>
-        <RestaurantCard resName= "PizzaHut" cuisine="Pizza, Wings" rating={4.0} time={40}/>
-        <RestaurantCard resName= "PizzaHut" cuisine="Pizza, Wings" rating={4.0} time={40}/>
-        <RestaurantCard resName= "PizzaHut" cuisine="Pizza, Wings" rating={4.0} time={40}/>
-        <RestaurantCard resName= "PizzaHut" cuisine="Pizza, Wings" rating={4.0} time={40}/>
-        <RestaurantCard resName= "PizzaHut" cuisine="Pizza, Wings" rating={4.0} time={40}/>
-        <RestaurantCard resName= "PizzaHut" cuisine="Pizza, Wings" rating={4.0} time={40}/>
-        <RestaurantCard resName= "PizzaHut" cuisine="Pizza, Wings" rating={4.0} time={40}/>
-        <RestaurantCard resName= "PizzaHut" cuisine="Pizza, Wings" rating={4.0} time={40}/>
-         */}
+        <RestaurantCard 
+         resData = {resList[1]}
+        />
+        <RestaurantCard 
+         resData = {resList[2]}
+        />
+        <RestaurantCard 
+         resData = {resList[3]}
+        />
+        <RestaurantCard 
+         resData = {resList[4]}
+        />
+        <RestaurantCard 
+         resData = {resList[5]}
+        />
+        <RestaurantCard 
+         resData = {resList[6]}
+        />
+        <RestaurantCard 
+         resData = {resList[7]}
+        />
+        <RestaurantCard 
+         resData = {resList[8]}
+        />
+        <RestaurantCard 
+         resData = {resList[9]}
+        />
+
       </div>
     </div>
   )
