@@ -43,6 +43,15 @@ const Header = () => {
 
 const RestaurantCard = (props) => {
  const { resData } = props;
+
+ const { 
+  cloudinaryImageId,
+  name,
+  cuisines,
+  costForTwo,
+  avgRating
+ } = resData?.info;
+
     return (
     <div className="res-card">
       <img 
@@ -52,10 +61,10 @@ const RestaurantCard = (props) => {
           resData.info.cloudinaryImageId
         }  
         />
-     <h3>{resData.info.name}</h3>
-     <h4>{resData.info.cuisines}</h4>
-     <h4>{resData.info.costForTwo}</h4>
-     <h4>{resData.info.avgRating}</h4>
+     <h3>{name}</h3>
+     <h4>{cuisines}</h4>
+     <h4>{costForTwo}</h4>
+     <h4>{avgRating}</h4>
     </div> 
   )
 };
@@ -1971,36 +1980,9 @@ const Body = () => {
         <input type="text" placeholder="Search" />
       </div>
       <div className="res-container">
-        <RestaurantCard 
-         resData = {resList[0]}
-        />
-        <RestaurantCard 
-         resData = {resList[1]}
-        />
-        <RestaurantCard 
-         resData = {resList[2]}
-        />
-        <RestaurantCard 
-         resData = {resList[3]}
-        />
-        <RestaurantCard 
-         resData = {resList[4]}
-        />
-        <RestaurantCard 
-         resData = {resList[5]}
-        />
-        <RestaurantCard 
-         resData = {resList[6]}
-        />
-        <RestaurantCard 
-         resData = {resList[7]}
-        />
-        <RestaurantCard 
-         resData = {resList[8]}
-        />
-        <RestaurantCard 
-         resData = {resList[9]}
-        />
+        {resList.map((restaurant) => (
+            <RestaurantCard key={restaurant.info.id} resData = {restaurant}/>
+        ))};
 
       </div>
     </div>
