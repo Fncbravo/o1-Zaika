@@ -1,3 +1,5 @@
+import { LOGO_URL } from "../utils/constants";
+
 
 export const Header = () => {
     return (
@@ -5,7 +7,7 @@ export const Header = () => {
         <div className="logo-container">
           <img 
              className='logo'
-             src="https://preview.redd.it/how-would-i-take-a-logo-like-a-fast-food-logo-remove-the-v0-vp4l25hezqfd1.jpeg?width=640&crop=smart&auto=webp&s=5cb3aad43002d9455f7c0f4595304e564045036e" 
+             src= {LOGO_URL}
              alt="Logo"
            />
         </div>
