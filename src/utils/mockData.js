@@ -196,7 +196,7 @@ const resList = [
           "Punjabi",
           "Home Food"
         ],
-        "avgRating": 4.7,
+        "avgRating": 3.7,
         "parentId": "22452",
         "avgRatingString": "4.7",
         "totalRatingsString": "431",
@@ -293,7 +293,7 @@ const resList = [
           "North Indian",
           "Thalis"
         ],
-        "avgRating": 4.4,
+        "avgRating": 3.4,
         "parentId": "444382",
         "avgRatingString": "4.4",
         "totalRatingsString": "587",
@@ -590,7 +590,7 @@ const resList = [
           "Ice Cream",
           "Desserts"
         ],
-        "avgRating": 4.9,
+        "avgRating": 3.9,
         "veg": true,
         "parentId": "12175",
         "avgRatingString": "4.9",
@@ -782,7 +782,7 @@ const resList = [
         "cuisines": [
           "Bakery"
         ],
-        "avgRating": 4.6,
+        "avgRating": 3.6,
         "parentId": "387417",
         "avgRatingString": "4.6",
         "totalRatingsString": "3.1K+",
@@ -980,7 +980,7 @@ const resList = [
           "Portuguese",
           "Continental"
         ],
-        "avgRating": 4.5,
+        "avgRating": 3.5,
         "parentId": "371281",
         "avgRatingString": "4.5",
         "totalRatingsString": "55K+",
@@ -1068,7 +1068,7 @@ const resList = [
           "South Indian",
           "North Indian"
         ],
-        "avgRating": 4.4,
+        "avgRating": 3.4,
         "parentId": "2120",
         "avgRatingString": "4.4",
         "totalRatingsString": "38K+",
@@ -1250,7 +1250,7 @@ const resList = [
           "North Indian",
           "Awadhi"
         ],
-        "avgRating": 4.1,
+        "avgRating": 3.1,
         "parentId": "22473",
         "avgRatingString": "4.1",
         "totalRatingsString": "343",
@@ -1351,7 +1351,7 @@ const resList = [
           "Keto",
           "Snacks"
         ],
-        "avgRating": 4.6,
+        "avgRating": 3.6,
         "parentId": "355285",
         "avgRatingString": "4.6",
         "totalRatingsString": "553",
@@ -1450,7 +1450,7 @@ const resList = [
           "Biryani",
           "South Indian"
         ],
-        "avgRating": 4.5,
+        "avgRating": 3.5,
         "parentId": "10496",
         "avgRatingString": "4.5",
         "totalRatingsString": "5.7K+",
@@ -1546,7 +1546,7 @@ const resList = [
           "Fast Food",
           "Rolls & Wraps"
         ],
-        "avgRating": 4.1,
+        "avgRating": 3.1,
         "parentId": "397044",
         "avgRatingString": "4.1",
         "totalRatingsString": "2.6K+",
@@ -1635,7 +1635,7 @@ const resList = [
           "Continental",
           "Italian"
         ],
-        "avgRating": 4.5,
+        "avgRating": 3.5,
         "parentId": "3220",
         "avgRatingString": "4.5",
         "totalRatingsString": "10K+",
@@ -1721,7 +1721,7 @@ const resList = [
           "Desserts",
           "Healthy Food"
         ],
-        "avgRating": 4.5,
+        "avgRating": 3.5,
         "veg": true,
         "parentId": "343689",
         "avgRatingString": "4.5",
@@ -1829,7 +1829,7 @@ const resList = [
           "Beverages",
           "Snacks"
         ],
-        "avgRating": 4.5,
+        "avgRating": 3.5,
         "parentId": "3818",
         "avgRatingString": "4.5",
         "totalRatingsString": "11K+",
