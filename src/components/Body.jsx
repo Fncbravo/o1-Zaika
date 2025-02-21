@@ -1,6 +1,6 @@
 import { RestaurantCard } from './RestaurantCard'
 import { useEffect, useState } from 'react';
-
+import Shimmer from './Shimmer';
 
   export const Body = () => {
 
@@ -21,9 +21,11 @@ import { useEffect, useState } from 'react';
        console.log(json);
        // Optional chaining
        setListOfRestaurants(json?.data?.cards[1]?.card?.card?.gridElements?.infoWithStyle?.restaurants)
-       
-
    };
+
+   if(listOfRestaurants.length === 0) {
+    return <Shimmer />;
+   }
 
     return (
       <div className="body">
