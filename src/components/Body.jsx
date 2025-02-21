@@ -7,6 +7,11 @@ import Shimmer from './Shimmer';
     // State variable - super powerful variable
     const [listOfRestaurants, setListOfRestaurants] = useState([]);
 
+    const [searchText, setSearchText] = useState(""); 
+
+    // Whenever state variables update, react triggers a reconciliation cycle (re-renders the component)
+    console.log("body rendered");
+
    useEffect(()=> {
     fetchData();
   }, []);
@@ -15,7 +20,7 @@ import Shimmer from './Shimmer';
     const data = await fetch(
       "https://www.swiggy.com/dapi/restaurants/list/v5?lat=12.9351929&lng=77.62448069999999&page_type=DESKTOP_WEB_LISTING"
        );
-
+       
        const json = await data.json();
 
        console.log(json);
@@ -30,6 +35,19 @@ import Shimmer from './Shimmer';
     return (
       <div className="body">
         <div className="filter">
+          <div className="search">
+            <input 
+            type="text" 
+            className='search-box' 
+            value={searchText} 
+            onChange={(e)=> {
+              setSearchText(e.target.value);
+            }}
+            />
+            <button onClick={()=> {
+                console.log(searchText)
+            }}>Search</button>
+          </div>
           <button className='filter-btn' onClick={()=> {
               
              const filteredList = listOfRestaurants.filter(
