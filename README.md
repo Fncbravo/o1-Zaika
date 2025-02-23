@@ -27,3 +27,14 @@ Currently, two official plugins are available:
  *  - Address
  *  - Contact
  */
+
+ # React hooks
+ (Normal JS utility functions)
+ - useState() 80% time - superpowerful state variables in react
+ - useEffect() 20% time
+
+ - whenever a state variable updates, react will rerender my component
+
+ # Reconciliation algorithm (react fiber) - whenever something changes on the ui
+ # Diff algorithm - finds out the difference between 2 doms
+  - react does not touch the dom a lot
