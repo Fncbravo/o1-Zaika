@@ -38,3 +38,5 @@ Currently, two official plugins are available:
  # Reconciliation algorithm (react fiber) - whenever something changes on the ui
  # Diff algorithm - finds out the difference between 2 doms
   - react does not touch the dom a lot
+
+  // Hello world
