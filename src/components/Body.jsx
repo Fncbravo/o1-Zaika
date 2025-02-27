@@ -31,6 +31,7 @@ import Shimmer from './Shimmer';
    if(listOfRestaurants.length === 0) {
     return <Shimmer />;
    }
+   console.log(listOfRestaurants)
 
     return (
       <div className="body">
@@ -45,8 +46,16 @@ import Shimmer from './Shimmer';
             }}
             />
             <button onClick={()=> {
-                console.log(searchText)
+                console.log(searchText);
+
+                const filteredRestaurant = listOfRestaurants.filter((res) =>
+                  res.info.name.includes(searchText)
+              );
+
+              setListOfRestaurants(filteredRestaurant);
+
             }}>Search</button>
+            
           </div>
           <button className='filter-btn' onClick={()=> {
               
