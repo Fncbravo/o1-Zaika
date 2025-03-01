@@ -40,3 +40,7 @@ Currently, two official plugins are available:
   - react does not touch the dom a lot
 
   // Hello world
+
+  # Routing 
+  - client side routing
+  - server side routing
