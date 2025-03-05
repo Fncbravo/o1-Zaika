@@ -43,7 +43,8 @@ if (resInfo === null) return <Shimmer/ >;
         <h2>Menu</h2>
         <ul>
           {itemCards.map((item) => (
-            <li>{item.card.info.name} - {"Rs "}
+            <li key={item.card.info.id}>
+            {item.card.info.name} - {"Rs "}
             {item.card.info.price / 100}</li>
             ))}
           <li>{itemCards[0].card.info.name}</li>
