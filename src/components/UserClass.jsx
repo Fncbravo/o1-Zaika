@@ -24,7 +24,6 @@ class UserClass extends React.Component {
                     count: this.state.count + 1,
                 })
             }}>Count increase</button>
-            <h1>Count2: {count2}</h1>
             <h2>Name: {name}</h2>
             <h3>Location: {location}</h3>
             <h3>Contact: @sujeetmarch18</h3>
