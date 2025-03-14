@@ -22,6 +22,7 @@ class UserClass extends React.Component {
                 // NEVER UPDATE STATE VAIRABLES DIRECTLY
                 this.setState({
                     count: this.state.count + 1,
+                    count2: this.state.count2 + 1,
                 })
             }}>Count increase</button>
             <h2>Name: {name}</h2>
