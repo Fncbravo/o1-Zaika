@@ -11,6 +11,10 @@ class UserClass extends React.Component {
         };
         console.log("Child Constructor")
     }
+
+    componentDidMount() {
+        console.log("Child componentDidMount");
+    }
  
     render() {
         const { name, location } = this.props;
