@@ -12,7 +12,7 @@ class About extends Component {
   }
 
   componentDidMount() {
-    console.log("Parent componentDidMount");
+    console.log("Parent component Did Mount");
   }
   
   render() {
@@ -21,12 +21,32 @@ class About extends Component {
       <div>
         <h1>About Class Component</h1>
         
-        <UserClass name={"Sujeet (class)"} location={"mumbai (class)"}/> 
+        <UserClass name={"First"} location={"mumbai (class)"}/> 
+        <UserClass name={"Second"} location={"USA"}/>  
       </div>
     )
   }
 }
 
+
+/*
+- Parent Constructor
+- Parent Render
+
+
+  - Sujeet Constructor
+  - Sujeet Render
+
+  - Elon Constructor
+  - Elon Render  
+
+    <DOM UPDATEED - IN SINGLE BATCH>  
+    
+  - First Component Did Mount
+  - Second Component Did Mount
+
+- Parent Component Did Mount
+ */
 
 
 export default About
