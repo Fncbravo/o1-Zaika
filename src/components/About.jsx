@@ -7,22 +7,21 @@ class About extends Component {
   constructor(props) {
     super(props);
 
-    console.log("Parent Constructor");
+    // console.log("Parent Constructor");
 
   }
 
   componentDidMount() {
-    console.log("Parent component Did Mount");
+    // console.log("Parent component Did Mount");
   }
   
   render() {
-    console.log("Parent Render");
+    // console.log("Parent Render");
     return (
       <div>
         <h1>About Class Component</h1>
         
         <UserClass name={"First"} location={"mumbai (class)"}/> 
-        <UserClass name={"Second"} location={"USA"}/>  
       </div>
     )
   }
@@ -41,7 +40,7 @@ class About extends Component {
   - Elon Render  
 
     <DOM UPDATEED - IN SINGLE BATCH>  
-    
+
   - First Component Did Mount
   - Second Component Did Mount
 
