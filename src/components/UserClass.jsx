@@ -11,7 +11,7 @@ class UserClass extends React.Component {
                 location: "default", 
             }
         };
-        // console.log(this.props.name + "Child Constructor")
+        console.log(this.props.name + "Child Constructor")
     }
 
     async componentDidMount() {
@@ -27,13 +27,17 @@ class UserClass extends React.Component {
 
         console.log(json);
     }
+
+    componentDidUpdate() {
+        console.log("component did update")
+    }
  
     render() {
 
-        // console.log(this.props.name + "Child Render")
+        console.log(this.props.name + "Child Render")
 
         const { name, location, avatar_url } = this.state.userInfo;
-
+         
     return (
         <div className="user-card">
             <img src={avatar_url} alt="user" />
@@ -48,3 +52,25 @@ class UserClass extends React.Component {
 }
 
 export default UserClass;
+
+
+/**
+ * 
+ * ----MOUNTING ---- 
+ * 
+ * Constructor 
+ * Render (dummy)
+ *      <HTML DUmmy>
+ *  ComponentDidMount
+ *    <Api Call>
+ *    <this.setState> -> State variable is updated
+ * 
+ * ----UPDATE
+ * 
+ *     render(API data)
+ *     <HTML (new API data)>
+ *     componentDidUpdate
+ * 
+ * 
+ * 
+ */
