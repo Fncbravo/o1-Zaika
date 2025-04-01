@@ -10,16 +10,16 @@ export const Header = () => {
  const onlineStatus = useOnlineStatus();
 
     return (
-      <div className='header'>
+      <div className='flex justify-between bg-yellow-100 shadow-lg'>
         <div className="logo-container">
           <img 
-             className='logo'
+             className='w-56 h-50 p-4 rounded-lg pl-8'
              src= {LOGO_URL}
              alt="Logo"
            />
         </div>
-        <div className="nav-items">
-          <ul>
+        <div className="flex items-center py-10 px-10 space-x-4">
+          <ul className="flex py-10 px-10 space-x-4">
             <li>
               Online Status: {onlineStatus ? "✅" : "❌"}
             </li>
