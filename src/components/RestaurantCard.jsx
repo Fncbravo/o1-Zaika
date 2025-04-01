@@ -13,16 +13,16 @@
     } = resData?.info;
    
        return (
-       <div className="res-card">
+       <div className=" restaurant-card w-56 p-2 m-2 bg-yellow-100 shadow-lg rounded-lg hover:bg-yellow-200">
          <img 
-           className='res-logo'
+           className='rounded-lg'
            alt="res-logo"
            src={ CDN_URL + 
              resData.info.cloudinaryImageId
            }  
            />
-        <h3>{name}</h3>
-        <h4>{cuisines}</h4>
+        <h3 className="font-bold py-4 text-lg">{name}</h3>
+        <h4>{cuisines.join(", ")}</h4>
         <h4>{costForTwo}</h4>
         <h4>{avgRating}</h4>
        </div> 
