@@ -46,17 +46,18 @@ import useOnlineStatus from '../utils/useOnlineStatus';
 
     return (
       <div className="body">
-        <div className="filter">
-          <div className="search">
+        <div className="filter flex">
+          <div className="search m-4 p-4">
             <input 
             type="text" 
-            className='search-box' 
+            className='border border-solid border-gray-400 rounded-lg p-2 m-2' 
             value={searchText} 
             onChange={(e)=> {
               setSearchText(e.target.value);
             }}
             />
-            <button onClick={()=> {
+            <button className='bg-blue-100 p-2 m-2 rounded-lg border border-solid border-gray-400'
+            onClick={()=> {
                 console.log(searchText);
 
                 const filteredRestaurant = listOfRestaurants.filter((res) =>
@@ -68,15 +69,18 @@ import useOnlineStatus from '../utils/useOnlineStatus';
             }}>Search</button>
             
           </div>
-          <button className='filter-btn' onClick={()=> {
+          <div className='search m-4 p-4 flex items-center'>
+          <button className='bg-blue-100 p-2 m-2 rounded-lg border border-solid border-gray-400' 
+                  onClick={()=> {
               
              const filteredList = listOfRestaurants.filter(
               (res)=> res.info.avgRating > 4 
             ); 
             setListOfRestaurants(filteredList);
-          }}>Top rated Restaurants</button>
+          }}>Top rated Restaurants</button> 
+          </div>
         </div>
-        <div className="res-container">
+        <div className="restaurant-list flex flex-wrap">
           {listOfRestaurants.map((restaurant) => (
              <Link 
              key={restaurant.info.id}
