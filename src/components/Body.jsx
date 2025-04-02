@@ -1,4 +1,4 @@
-import { RestaurantCard } from './RestaurantCard'
+import { RestaurantCard, withPromotedLabel } from './RestaurantCard'
 import { useEffect, useState } from 'react';
 import Shimmer from './Shimmer';
 import { Link } from 'react-router-dom';
@@ -11,8 +11,10 @@ import useOnlineStatus from '../utils/useOnlineStatus';
 
     const [searchText, setSearchText] = useState(""); 
 
+    // const RestaurantCardPromoted = withPromotedLabel(RestaurantCard);  not working because of new updated data from api
+
     // Whenever state variables update, react triggers a reconciliation cycle (re-renders the component)
-    console.log("body rendered");
+    console.log("body rendered", listOfRestaurants);
 
    useEffect(()=> {
     fetchData();
@@ -86,7 +88,12 @@ import useOnlineStatus from '../utils/useOnlineStatus';
              key={restaurant.info.id}
              to={"/restaurants/" + restaurant.info.id}
              >
-              <RestaurantCard resData = {restaurant}/></Link>
+              {restaurant.info.promoted ? (
+                <RestaurantCardPromoted resData = {restaurant}/>
+              ) : (
+                <RestaurantCard resData = {restaurant}/>
+              )}
+              </Link>
           ))}
         </div>
       </div>
